@@ -1,7 +1,15 @@
 
+// Variable scss file 
+@import "./variable";
+
 // Default scss file 
 @import "./default";
 
-// Variable scss file 
-@import "./variable";
+// function scss file
+@import "./function";
+
+// grid system
+@import "./grid";
+
+
 
