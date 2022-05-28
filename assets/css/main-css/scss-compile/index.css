@@ -23,6 +23,7 @@ img {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -254,7 +255,7 @@ ul {
 
 .btn {
   display: inline-block;
-  font-size: 1.1em;
+  font-size: 1.3em;
   text-transform: capitalize;
   line-height: 30px;
   border-radius: 3px;
@@ -264,22 +265,66 @@ ul {
   -o-border-radius: 3px;
   -webkit-box-shadow: 1px 1px 2px #7c7c7cec;
           box-shadow: 1px 1px 2px #7c7c7cec;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 14px 28px;
 }
 
-.btn {
-  display: inline-block;
-  font-size: 1.3em;
-  font-weight: 600;
-  text-transform: capitalize;
-  letter-spacing: 0.08em;
-  line-height: 30px;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  -webkit-box-shadow: 1px 1px 2px #7c7c7cec;
-  box-shadow: 1px 1px 3px #7c7c7cec;
-  padding: 14px 28px;
+header#main-header {
+  padding: 14px 0;
+  line-height: 0;
+  -webkit-box-shadow: 0 2px 3px #00000026;
+          box-shadow: 0 2px 3px #00000026;
+}
+
+header#main-header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header#main-header .container .logo-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header#main-header .container .logo-title .logo {
+  width: 3em;
+  margin-right: 6px;
+}
+
+header#main-header .container .logo-title .title h1 {
+  font-size: 1.4em;
+  margin-left: 4px;
+}
+
+header#main-header .container .main-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header#main-header .container .main-menu ul li a {
+  font-size: 1.1em;
+  padding: 0 12px;
 }
 /*# sourceMappingURL=index.css.map */

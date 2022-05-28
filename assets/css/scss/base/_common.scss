@@ -16,27 +16,9 @@
 }
 
 .btn {
-  display: inline-block;
-  font-size: 1.1em;
-  text-transform: capitalize;
-  line-height: 30px;
-  @include border-radius(3px);
-  box-shadow: 1px 1px 2px $btn-bsd-cl;
+  @include btn;
 }
 
-.btn {
-  display: inline-block;
-  font-size: 1.3em;
-  font-weight: 600;
-  text-transform: capitalize;
-  letter-spacing: 0.08em;
-  line-height: 30px;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  -webkit-box-shadow: 1px 1px 2px #7c7c7cec;
-  box-shadow: 1px 1px 3px #7c7c7cec;
-  padding: 14px 28px;
-}
+
+
+

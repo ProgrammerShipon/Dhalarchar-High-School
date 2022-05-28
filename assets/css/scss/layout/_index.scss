@@ -1,0 +1,38 @@
+header#main-header {
+  padding: 14px 0;
+  line-height: 0;
+  box-shadow: 0 2px 3px #00000026;
+
+  .container {
+    @include flex-layout;
+
+    .logo-title {
+      @include flex-layout;
+
+      .logo {
+        width: 3em;
+        margin-right: 6px;
+      }
+
+      .title {
+        h1 {
+          font-size: 1.4em;
+          margin-left: 4px;
+        }
+      }
+    }
+
+    .main-menu {
+      ul {
+        @include flex-layout;
+
+        li {
+          a {
+            font-size: 1.1em;
+            padding: 0 12px;
+          }
+        }
+      }
+    }
+  }
+}
