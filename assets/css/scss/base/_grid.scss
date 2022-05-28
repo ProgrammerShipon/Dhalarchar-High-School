@@ -1,113 +1,66 @@
+
 .container {
   width: 1200px;
-  padding: 0 30px;
+  padding: 0 40px;
   margin: 0 auto;
-
-  .row {
-    width: calc(1200px / 3);
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -15px;
-  }
 }
+
+// Responsive scss
 
 @media (min-width: 200px) and (max-width: 399px) {
   .container {
-    width: calc(100% - 110px);
-    padding: 0 34px;
+    width: 99%;
+    padding: 0 20px;
     margin: 0 auto;
-
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 -17px;
-    }
   }
 }
 
 @media (min-width: 400px) and (max-width: 599px) {
   .container {
-    width: calc(100% - 110px);
-    padding: 0 34px;
+    width: 98%;
+    padding: 0 25px;
     margin: 0 auto;
-
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 -17px;
-    }
   }
 }
 
 @media (min-width: 600px) and (max-width: 799px) {
   .container {
-    width: calc(100% - 110px);
-    padding: 0 34px;
+    width: 97%;
+    padding: 0 30px;
     margin: 0 auto;
-
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 -17px;
-    }
   }
 }
 
 @media (min-width: 800px) and (max-width: 999px) {
   .container {
-    width: calc(100% - 110px);
-    padding: 0 34px;
+    width: 96%;
+    padding: 0 35px;
     margin: 0 auto;
-
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 -17px;
-    }
   }
 }
 
 @media (min-width: 1000px) and (max-width: 1199px) {
   .container {
-    width: calc(100% - 110px);
-    padding: 0 34px;
+    width: 95%;
+    padding: 0 40px;
     margin: 0 auto;
-
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 -17px;
-    }
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   .container {
-    width: calc(100% - 110px);
-    padding: 0 34px;
+    width: 94%;
+    padding: 0 45px;
     margin: 0 auto;
-
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 -17px;
-    }
   }
 }
 
 @media (min-width: 1400px) {
   .container {
-    width: calc(100% - 200px);
-    padding: 0 80px;
+    width: 1450px;
+    padding: 0 100px;
     margin: 0 auto;
-  
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 -40px;
-    }
   }
 }
-
 
 

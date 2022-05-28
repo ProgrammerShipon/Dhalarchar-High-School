@@ -2,6 +2,9 @@
 // Variable scss file 
 @import "./variable";
 
+// Mixin file
+@import "./mixin";
+
 // Default scss file 
 @import "./default";
 
@@ -11,5 +14,6 @@
 // grid system
 @import "./grid";
 
-
+// Common class
+@import "./common";
 
