@@ -36,3 +36,117 @@ header#main-header {
     }
   }
 }
+
+main {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5px;
+
+    .left-side,
+    .right-side {
+      flex-basis: 16%;
+      margin: 13px 0.30%;
+      // padding: 9px;
+    }
+
+    .body-content {
+      flex-basis: 65%;
+      margin: 10px 0;
+    }
+
+    .left-side {
+      .left-menu {
+        box-shadow: 0px 0px 2px #6d6d6d, 0px 0px 3px #6d6d6db8, 0px 0px 4px #6d6d6d5c;
+        padding: 9px 16px;
+        text-transform: capitalize;
+        border-radius: 5px;
+        margin-bottom: 23px;
+
+        h1 {
+          text-align: center;
+          padding: 10px 5px;
+          color: #f00;
+          font-size: 1.6em;
+        }
+
+        ul li a {
+          padding: 7px 4px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.emergency-link {
+  box-shadow: $box-shadow;
+  padding: 9px 16px;
+  border-radius: 5px;
+  margin-bottom: 23px;
+
+  h2 {
+    font-size: 1.1em;
+    text-align: center;
+    background: orange;
+    padding: 7px;
+    font-family: 'Tiro Bangla', serif;
+    letter-spacing: 0.01em;
+    word-spacing: .19em;
+    border-top-left-radius: 6em;
+    border-bottom-right-radius: 6em;
+    margin-bottom: 15px;
+  }
+
+  h5 {
+    font-size: 1.2em;
+    text-transform: capitalize;
+    color: #f00;
+    border-bottom: 2px solid #f00;
+    display: inline-block;
+    line-height: 15px;
+  }
+
+  .date-coment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .8em;
+    color: #a1a1a1;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+  }
+
+  p {
+    margin: 14px 0px;
+    text-transform: capitalize;
+  }
+
+  & > a {
+    color: #2bff00;
+    text-transform: capitalize;
+  }
+
+  ul {
+    li {
+      a {
+        padding: 2px 0;
+        border-bottom: 2px solid #a9a9a996;
+        display: block;
+      }
+
+      &:last-child {
+        a {
+          border-bottom: none;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
