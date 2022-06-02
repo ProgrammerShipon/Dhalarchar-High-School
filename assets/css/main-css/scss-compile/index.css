@@ -6,7 +6,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
@@ -349,6 +349,73 @@ main .container .right-side {
   margin: 13px 0.30%;
 }
 
+main .container .emergency-link {
+  -webkit-box-shadow: 0px 0px 2px #6d6d6d, 0px 0px 3px #6d6d6db8, 0px 0px 4px #6d6d6d5c;
+          box-shadow: 0px 0px 2px #6d6d6d, 0px 0px 3px #6d6d6db8, 0px 0px 4px #6d6d6d5c;
+  padding: 9px 16px;
+  border-radius: 5px;
+  margin-bottom: 23px;
+}
+
+main .container .emergency-link h2 {
+  font-size: 1.1em;
+  text-align: center;
+  background: orange;
+  padding: 7px;
+  font-family: 'Tiro Bangla', serif;
+  letter-spacing: 0.01em;
+  word-spacing: .19em;
+  border-top-left-radius: 6em;
+  border-bottom-right-radius: 6em;
+  margin-bottom: 15px;
+}
+
+main .container .emergency-link h5 {
+  font-size: 1.2em;
+  text-transform: capitalize;
+  color: #f00;
+  border-bottom: 2px solid #f00;
+  display: inline-block;
+  line-height: 15px;
+}
+
+main .container .emergency-link .date-coment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .8em;
+  color: #a1a1a1;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+main .container .emergency-link p {
+  margin: 14px 0px;
+  text-transform: capitalize;
+}
+
+main .container .emergency-link > a {
+  color: #2bff00;
+  text-transform: capitalize;
+}
+
+main .container .emergency-link ul li a {
+  padding: 2px 0;
+  border-bottom: 2px solid #a9a9a996;
+  display: block;
+}
+
+main .container .emergency-link ul li:last-child a {
+  border-bottom: none;
+  margin-bottom: 8px;
+}
+
 main .container .body-content {
   -ms-flex-preferred-size: 65%;
       flex-basis: 65%;
@@ -356,8 +423,8 @@ main .container .body-content {
 }
 
 main .container .left-side .left-menu {
-  -webkit-box-shadow: 0px 0px 2px #6d6d6d, 0px 0px 3px #6d6d6db8, 0px 0px 4px #6d6d6d5c;
-          box-shadow: 0px 0px 2px #6d6d6d, 0px 0px 3px #6d6d6db8, 0px 0px 4px #6d6d6d5c;
+  -webkit-box-shadow: 0px 0px 2px #6d6d6d, 0px 0px 3px #6d6d6db8, 0px 0px 4px #6d6d6d5c;
+          box-shadow: 0px 0px 2px #6d6d6d, 0px 0px 3px #6d6d6db8, 0px 0px 4px #6d6d6d5c;
   padding: 9px 16px;
   text-transform: capitalize;
   border-radius: 5px;
@@ -376,37 +443,17 @@ main .container .left-side .left-menu ul li a {
   font-weight: 600;
 }
 
-.emergency-link {
-  -webkit-box-shadow: 0px 0px 2px #6d6d6d, 0px 0px 3px #6d6d6db8, 0px 0px 4px #6d6d6d5c;
-          box-shadow: 0px 0px 2px #6d6d6d, 0px 0px 3px #6d6d6db8, 0px 0px 4px #6d6d6d5c;
-  padding: 9px 16px;
-  border-radius: 5px;
-  margin-bottom: 23px;
-}
-
-.emergency-link h2 {
-  font-size: 1.1em;
+main .container .body-content h1 {
   text-align: center;
-  background: orange;
-  padding: 7px;
-  font-family: 'Tiro Bangla', serif;
-  letter-spacing: 0.01em;
-  word-spacing: .19em;
-  border-top-left-radius: 6em;
-  border-bottom-right-radius: 6em;
-  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 2em;
+  font-family: "Tiro Bangla", serif;
+  line-height: 2em;
+  letter-spacing: 0.08em;
+  word-spacing: 0.09em;
 }
 
-.emergency-link h5 {
-  font-size: 1.2em;
-  text-transform: capitalize;
-  color: #f00;
-  border-bottom: 2px solid #f00;
-  display: inline-block;
-  line-height: 15px;
-}
-
-.emergency-link .date-coment {
+main .container .body-content .trending-today {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,30 +463,5 @@ main .container .left-side .left-menu ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: .8em;
-  color: #a1a1a1;
-  margin-bottom: 8px;
-  text-transform: capitalize;
-}
-
-.emergency-link p {
-  margin: 14px 0px;
-  text-transform: capitalize;
-}
-
-.emergency-link > a {
-  color: #2bff00;
-  text-transform: capitalize;
-}
-
-.emergency-link ul li a {
-  padding: 2px 0;
-  border-bottom: 2px solid #a9a9a996;
-  display: block;
-}
-
-.emergency-link ul li:last-child a {
-  border-bottom: none;
-  margin-bottom: 8px;
 }
 /*# sourceMappingURL=index.css.map */
