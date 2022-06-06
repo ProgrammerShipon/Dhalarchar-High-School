@@ -33,4 +33,21 @@
   align-items: $ai;
 }
 
+@mixin mrg-pdn-bxSD {
+  box-shadow: $box-shadow;
+  padding: 9px 16px;
+  border-radius: 5px;
+  margin-bottom: 23px;
+}
+
+@mixin box-headline {
+  background: orange;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  letter-spacing: 0.01em;
+  word-spacing: .19em;
+  margin-bottom: 15px;
+  padding: 9px;
+  text-transform: capitalize;
+}
 
