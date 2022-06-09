@@ -39,9 +39,8 @@ header#main-header {
 
 main {
   .container {
-    display: flex;
+    @include flex-layout($ai: flex-start);
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 0 5px;
 
     .left-side,
@@ -319,51 +318,97 @@ main {
           margin: 10px 0;
         }
       }
-    }
-  }
-}
 
-.parent-feedback {
-  @include mrg-pdn-bxSD;
-  position: relative;
+      .parent-feedback {
+        @include mrg-pdn-bxSD;
+        position: relative;
 
-  h2 {
-    @include box-headline;
-    font-size: 1em;
-    padding-left: 18px;
-  }
+        h2 {
+          @include box-headline;
+          font-size: 1em;
+          padding-left: 18px;
+        }
 
-  .parent-blog {
-    .feedback-profile {
-      @include flex-layout;
+        .parent-blog {
+          .feedback-profile {
+            @include flex-layout;
 
-      .image {
-        flex-basis: 18%;
-        padding: 1%;
+            .image {
+              flex-basis: 18%;
+              padding: 1%;
+            }
+
+            .social-media {
+              flex-basis: 11%;
+            }
+
+            .names {
+              flex-basis: 68%;
+            }
+
+            .social-media {
+              a {
+                font-size: 1.5em;
+              }
+            }
+          }
+        }
       }
 
-      .social-media {
-        flex-basis: 11%;
-      }
+      .DC-social-media a {
+        width: 22%;
 
-      .names {
-        flex-basis: 68%;
-      }
-
-      .social-media {
-        a {
-          font-size: 1.5em;
+        i {
+          font-size: 2em;
+          margin: 0.1em;
         }
       }
     }
   }
 }
 
-.DC-social-media a {
-  width: 22%;
+footer {
+  box-shadow: 0 -2px 3px #00000026;
 
-  i {
-    font-size: 2em;
-    margin: 0.1em;
+  .buttom-menu {
+    background: #5e5e5e11;
+
+    ul {
+      @include flex-layout();
+
+
+      li {
+
+        a {
+          display: inline-block;
+          font-size: 1.1em;
+          padding: 19px 6px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .copyright-area {
+    background: $bg-cl-bl;
+    color: $tt-cl-wh;
+
+    .container {
+      @include flex-layout;
+
+      p {
+        font-size: 1.2em;
+        padding: 11px 0;
+        text-transform: capitalize;
+
+        a {
+          color: $tt-cl-wh;
+
+          &:hover {
+            color: $tt-cl-wh-hv;
+          }
+        }
+      }
+    }
   }
 }
