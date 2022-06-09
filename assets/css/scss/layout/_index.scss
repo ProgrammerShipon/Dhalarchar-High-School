@@ -266,7 +266,37 @@ main {
           }
 
           .blog {
-            @include flex-layout;
+            @include flex-layout($ai: flex-start);
+
+            .blog-profile {
+              flex-basis: 40%;
+              padding: 2%;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              text-transform: capitalize;
+
+              .profile-img {
+                width: 77%;
+                text-align: center;
+              }
+
+              .social-media {
+                margin-top: 10px;
+
+                a {
+                  i {
+                    font-size: 1.7em;
+                    color: orange;
+                  }
+                }
+              }
+            }
+
+            .blog-content {
+              flex-basis: 100%;
+            }
           }
         }
       }
@@ -290,5 +320,50 @@ main {
         }
       }
     }
+  }
+}
+
+.parent-feedback {
+  @include mrg-pdn-bxSD;
+  position: relative;
+
+  h2 {
+    @include box-headline;
+    font-size: 1em;
+    padding-left: 18px;
+  }
+
+  .parent-blog {
+    .feedback-profile {
+      @include flex-layout;
+
+      .image {
+        flex-basis: 18%;
+        padding: 1%;
+      }
+
+      .social-media {
+        flex-basis: 11%;
+      }
+
+      .names {
+        flex-basis: 68%;
+      }
+
+      .social-media {
+        a {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+.DC-social-media a {
+  width: 22%;
+
+  i {
+    font-size: 2em;
+    margin: 0.1em;
   }
 }
