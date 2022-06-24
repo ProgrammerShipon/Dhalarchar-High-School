@@ -87,7 +87,7 @@ main {
 
     .left-side,
     .right-side {
-      flex-basis: 16%;
+      flex-basis: 15.5%;
       margin: 13px 0.30%;
       // padding: 9px;
     }
@@ -242,7 +242,7 @@ main {
     }
 
     .body-content {
-      flex-basis: 65%;
+      flex-basis: 61%;
       margin: 10px 0;
 
       h1 {
@@ -391,6 +391,47 @@ main {
           margin: 10px 0;
           text-transform: uppercase;
           font-size: 1em;
+        }
+      }
+
+      .calender-date {
+        @include mrg-pdn-bxSD;
+
+        h2 {
+          @include box-headline;
+          font-size: 1.1em;
+        }
+
+        .watch-area {
+          @include flex-layout;
+          font-size: 1.3em;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+        }
+
+        .calender {
+          text-transform: capitalize;
+          .month-year {
+            @include flex-layout;
+            font-weight: 500;
+            font-size: 1em;
+
+            .year-changer {
+              @include flex-layout;
+
+              span {
+                pre {
+                  font-size: 1.1em;
+                  padding: 0px 3px;
+                }
+              }
+            }
+          }
+
+          .calender-body {
+            @include flex-layout();
+          }
         }
       }
 
